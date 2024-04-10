@@ -1,0 +1,23 @@
+{
+  "name": "frontend-starterpack-sanjanaraj25",
+  "version": "1.0.0",
+  "description": "*description*",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dartmouth-cs52-24s/frontend-starterpack-SanjanaRaj25.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dartmouth-cs52-24s/frontend-starterpack-SanjanaRaj25/issues"
+  },
+  "homepage": "https://github.com/dartmouth-cs52-24s/frontend-starterpack-SanjanaRaj25#readme",
+  "devDependencies": {
+    "vite": "^5.2.8"
+  }
+}
