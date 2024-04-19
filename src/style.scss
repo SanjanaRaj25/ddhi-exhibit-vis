@@ -1,0 +1,14 @@
+$fontcolor:  rgb(10%, 10%, 10%);
+$backgroundcolor: rgb(255, 214, 243);
+
+body {
+    font-family: "Special Elite", system-ui;
+    color: $fontcolor;
+    background-color: $backgroundcolor;
+    margin: 50px;
+  }
+
+.active {
+    color: pink;
+  }
+  
