@@ -1,39 +1,24 @@
-import React, { useParams } from 'react';
+/* eslint-disable import/no-extraneous-dependencies */
+import React from 'react';
 import { createRoot } from 'react-dom/client';
 import './style.scss';
 import {
-  BrowserRouter, Routes, Route, NavLink,
+  BrowserRouter, Routes, Route,
 } from 'react-router-dom';
-import Controls from './components/controls';
-import Counter from './components/counter';
+import Home from './components/Home';
 
-function Nav(props) {
-  return (
-    <nav>
-      <ul>
-        <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/about">About</NavLink></li>
-        <li><NavLink to="/test/id1">test id1</NavLink></li>
-        <li><NavLink to="/test/id2">test id2</NavLink></li>
-
-      </ul>
-    </nav>
-  );
-}
-
-function About(props) {
-  return <div> All there is to know about me </div>;
-}
-function Welcome(props) {
-  return (
-    <><Controls /><Counter /><div>Welcome</div></>
-  );
-}
-
-function Test(props) {
-  const { id } = useParams();
-  return <div> ID: {id} </div>;
-}
+// function Nav() {
+//   return (
+//     <nav>
+//       <ul>
+//         <li><NavLink to="/">Home</NavLink></li>
+//         <li><NavLink to="/laughlin">Laughlin</NavLink></li>
+//         <li><NavLink to="/2">2</NavLink></li>
+//         <li><NavLink to="/3">3</NavLink></li>
+//       </ul>
+//     </nav>
+//   );
+// }
 
 function FallBack(props) {
   return <div>URL Not Found</div>;
@@ -43,11 +28,8 @@ function App(props) {
   return (
     <BrowserRouter>
       <div>
-        <Nav />
         <Routes>
-          <Route path="/" element={<Welcome />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/test/:id" element={<Test />} />
+          <Route path="/" element={<Home />} />
           <Route path="*" element={<FallBack />} />
         </Routes>
       </div>

@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/dartmouth-cs52-24s/frontend-starterpack-SanjanaRaj25#readme",
   "devDependencies": {
+    "@craco/craco": "^7.1.0",
+    "@semantic-ui-react/craco-less": "^3.0.0",
     "autoprefixer": "^10.4.19",
     "eslint": "^8.57.0",
     "eslint-config-airbnb": "^19.0.4",
@@ -33,6 +35,7 @@
     "vite-plugin-eslint": "^1.8.1"
   },
   "dependencies": {
+    "@tabler/icons-react": "^3.3.0",
     "@vitejs/plugin-react": "^4.2.1",
     "axios": "^1.6.8",
     "eslint-plugin-prefer-arrow-functions": "^3.3.2",
@@ -43,6 +46,8 @@
     "react-dom": "^18.2.0",
     "react-router": "^6.22.3",
     "react-router-dom": "^6.22.3",
+    "semantic-ui-less": "^2.5.0",
+    "semantic-ui-react": "^2.1.5",
     "zustand": "^4.5.2"
   }
 }
