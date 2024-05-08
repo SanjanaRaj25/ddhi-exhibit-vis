@@ -46,6 +46,7 @@ nav li {
     }
     .i{
         color: rgba(67, 62, 62, 0.694);
+        margin-bottom: 5%;
     }
 }
 
@@ -60,9 +61,27 @@ nav li {
   display: flex;
   justify-content: space-between;
   p{
-    font-size: 5px;
+    font-size: 7px;
     color: rgb(67, 62, 62);
     font-style: italic;
+  }
+}
+
+.legend{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  .circle{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin: 1px;
+  }
+  .label{
+    color: grey;
+    font-size: 7px;
+    margin: 5px;
   }
 }
 
@@ -70,6 +89,7 @@ nav li {
 .align-1{
     background-color: #63ACFF;
 }
+
 .align-2{
     background-color: #74A6F0;
 }
@@ -99,6 +119,28 @@ nav li {
 }
 
 // texture classes: 1 = oldest, most textured, 5 = most polished
+.texture-1{
+  box-shadow: none;
+  mix-blend-mode: multiply;
+  // background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+}
+
+.texture-2{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 10px, rgba(0, 0, 0, 0.12) 0px -12px 10px, rgba(0, 0, 0, 0.12) 0px 2px 2px, rgba(0, 0, 0, 0.17) 0px 5px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  // background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+}
+
+.texture-3{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 30px 30px, rgba(0, 0, 0, 0.12) 0px -12px 10px, rgba(0, 0, 0, 0.12) 0px 2px 2px, rgba(0, 0, 0, 0.17) 0px 5px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.texture-4{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 40px 40px, rgba(0, 0, 0, 0.12) 0px -12px 20px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.texture-5{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 60px 60px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
 
 .paperOverlay {
   position: absolute;
