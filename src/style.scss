@@ -6,6 +6,7 @@
 
 body {
   color: #263238;
+  background-color: #191414;
 }
 
 nav {
@@ -121,7 +122,7 @@ nav li {
 // texture classes: 1 = oldest, most textured, 5 = most polished
 .texture-1{
   box-shadow: none;
-  mix-blend-mode: multiply;
+  // mix-blend-mode: multiply;
   // background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
 }
 
