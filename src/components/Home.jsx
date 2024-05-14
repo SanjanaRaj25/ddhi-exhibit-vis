@@ -32,7 +32,6 @@ function CardExampleGroups() {
         <p className="label">pro war</p>
       </div>
       <div className="gallery">
-        {/* james laughlin */}
         <SingleCard quote="I always felt that—and I feel to this day—that having liberal arts students from schools like Dartmouth or Cornell or NYU [New York University] adds a leavening experience to the military that you don’t get from having your officer corps comprised solely of West Point graduates." date="2015" person="James Laughlin" align="align-7" texture="texture-5" />
         <SingleCard quote="I think we were very naïve in that we didn’t pay much attention to it. There was very little that was being reported back to the U.S. by the press. I think they were suppressed in what they could and could not send back." date="1964-1967" person="James Laughlin" align="align-6" texture="texture-2" />
         <SingleCard quote="I think we all felt that sooner or later we were going to be drafted, and my personal feeling, and I think a lot of my classmates shared this, was that we would be better off serving our country as officers than as enlisted men or draftees." date="1960-1964" person="James Laughlin" align="align-5" texture="texture-1" />

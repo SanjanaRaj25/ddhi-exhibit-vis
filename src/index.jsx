@@ -2,10 +2,13 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import './style.scss';
+import './newstyle.scss';
 import {
   BrowserRouter, Routes, Route,
 } from 'react-router-dom';
 import Home from './components/Home';
+import Laughlin from './components/Laughlin';
+import Test from './components/Test';
 
 // function Nav() {
 //   return (
@@ -30,6 +33,8 @@ function App(props) {
       <div>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/1" element={<Laughlin />} />
+          <Route path="/test" element={<Test />} />
           <Route path="*" element={<FallBack />} />
         </Routes>
       </div>

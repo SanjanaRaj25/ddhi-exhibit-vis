@@ -1,0 +1,92 @@
+/// Mixin to place items on a circle
+/// @author Kitty Giraudel
+/// @author Ana Tudor
+/// @param {Integer} $item-count - Number of items on the circle
+/// @param {Length} $circle-size - Large circle size
+/// @param {Length} $item-size - Single item size
+/// @param {Number} $growth-rate - Rate at which the number of items per orbit grows
+@mixin on-circle($item-count, $circle-size, $item-size, $growth-rate: 1.2) {
+  $orbit-count: 1;
+  $remaining-items: $item-count;
+  $orbit-size: $circle-size;
+  $items-in-current-orbit: 0;
+  $total-items-placed: 0;
+
+  position: relative;
+  width: $orbit-size + ($item-size * 2);
+  height: $orbit-size + ($item-size * 2);
+  padding: 0;
+  border-radius: 50%;
+  list-style: none;
+
+  @while $remaining-items > 0 {
+    $items-in-current-orbit: ceil($growth-rate * ($orbit-count - 1));
+    $items-in-current-orbit: min($items-in-current-orbit, $remaining-items);
+    $remaining-items: $remaining-items - $items-in-current-orbit;
+    $orbit-size: $orbit-size + ($item-size * 2);
+
+    > * {
+      $angle: (360 / $items-in-current-orbit);
+      $rot: 0;
+
+      @for $i from 1 through $items-in-current-orbit {
+        &:nth-of-type(#{$total-items-placed + $i}) {
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: $item-size;
+          height: $item-size;
+          margin: -($item-size / 2);
+          transform: rotate($rot * 1deg) translate($orbit-size / 2) rotate($rot * -1deg);
+        }
+        $rot: $rot + $angle;
+      }
+    }
+
+    $total-items-placed: $total-items-placed + $items-in-current-orbit;
+    $orbit-count: $orbit-count + 1;
+  }
+}
+
+.circle-container {
+  @include on-circle($item-count: 100, $circle-size: 3em, $item-size: 4em, $growth-rate: 50);
+  margin-top: 10%;
+  margin-left: 40%;
+}
+  
+  circle {
+    background: linear-gradient(45deg, rgba(132, 224, 255, 0) 30%,rgba(238, 142, 255, 0) 60%,rgb(139, 255, 228) 100%), radial-gradient(ellipse at center, rgba(139, 170, 255, 0) 27%,rgba(76,110,207,0.33) 51%,rgba(102, 99, 255, 0.58) 69%,rgba(89,78,183,1) 100%), linear-gradient(80deg, rgba(246,148,203,0) 0%,rgba(70,232,205,.1) 70%,rgba(46,244,205,1) 100%), linear-gradient(45deg, rgba(46,244,205,1) 0%,rgba(76,110,207,0.2) 50%,rgba(76,110,207,0) 60%);
+    border-radius: 100%;
+    // box-shadow: 0 15px 55px 20px rgba(0, 0, 0, .1);
+    filter: blur(2px);
+    /* Apply circular path arrangement */
+    // @include orbit(10px, (8, 10, 12, 15, 18), 20px); /* Adjust item width, counts, and spacing as needed */
+  }
+  
+  
+  @keyframes warp {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    25% {
+      transform: translate(-50%, -50%) rotate(15deg);
+    }
+    50% {
+      transform: translate(-50%, -50%) rotate(-5deg);
+    }
+    75% {
+      transform: translate(-50%, -50%) rotate(15deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+  }
+  
+  .sun2 {
+    width: 70px; height: 70px; border-radius: 25rem; background: radial-gradient(ellipse at 50% 50%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(ellipse at 70% 60%, #c3e060 0%, rgba(195, 224, 96, 0) 90%), radial-gradient(ellipse at 30% 30%, #c3e060 0%, rgba(195, 224, 96, 0) 60%), radial-gradient(ellipse at bottom left, #00a3cb 0%, rgba(0, 163, 203, 0) 70%), linear-gradient(135deg, rgba(18, 46, 119, 0) 0%, rgba(18, 46, 119, 0) 75%, #122e77 100%), linear-gradient(to right, #625793 0%, #d55d64 35%, #e49129 65%, #c0671c 100%); background-blend-mode: overlay,luminosity,multiply,saturation,color-dodge,lighten; filter: blur(14px);
+  }
+  
+  .sun3 {
+    width: 70px; height: 70px; border-radius: 25rem; background: radial-gradient(ellipse at 50% 50%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(ellipse at 70% 60%, #c3e060 0%, rgba(195, 224, 96, 0) 90%), radial-gradient(ellipse at 30% 30%, #c3e060 0%, rgba(195, 224, 96, 0) 60%), radial-gradient(ellipse at bottom left, #00a3cb 0%, rgba(0, 163, 203, 0) 70%), linear-gradient(135deg, rgba(18, 46, 119, 0) 0%, rgba(18, 46, 119, 0) 75%, #122e77 100%), linear-gradient(to right, #625793 0%, #d55d64 35%, #e49129 65%, #c0671c 100%); background-blend-mode: screen,lighten,luminosity,overlay; filter: blur(14px);
+  }
