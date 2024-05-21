@@ -6,7 +6,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { IconBlockquote } from '@tabler/icons-react';
-import Laughlin from './Laughlin';
 
 function SingleCard({
   quote, date, person, align, texture,
@@ -17,7 +16,7 @@ function SingleCard({
       <blockquote className="quote">{quote}</blockquote>
       <hr />
       <div className="bottom">
-        <p>{date}</p>
+        <p className="date">{date}</p>
         <p>{person}</p>
       </div>
     </div>
@@ -27,18 +26,20 @@ function SingleCard({
 function CardExampleGroups() {
   return (
     <div className="page">
-      {/* <div className="legend">
-        <div className="circle align-1" /> <div className="circle align-2" /> <div className="circle align-3" /> <div className="circle align-4" /> <div className="circle align-5" /> <div className="circle align-6" /> <div className="circle align-7" /> <div className="circle align-8" /> <div className="circle align-9" /> <div className="circle align-10" />
-      </div> */}
       <div className="gallery">
-        <Laughlin />
-      </div>
+        <h5 className="sub">1960-1970</h5>
+        <SingleCard quote="d" date="1960-1964" person="Neal Stanley" align="align-5" texture="texture-1" />
+        <SingleCard quote="d" date="1960-1964" person="Neal Stanley" align="align-5" texture="texture-1" />
 
+        <h5 className="sub">2015-present</h5>
+        <SingleCard quote="d" date="2015" person="James Laughlin" align="align-7" texture="texture-5" />
+        <SingleCard quote="d" date="2015" person="James Laughlin" align="align-7" texture="texture-5" />
+      </div>
     </div>
   );
 }
 
-export default function Home() {
+export default function Laughlin() {
   return (
     <CardExampleGroups />
   );
