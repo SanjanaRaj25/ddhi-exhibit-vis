@@ -27,9 +27,7 @@ function CardExampleGroups() {
   return (
     <div className="page">
       <div className="legend">
-        <p className="label">anti war</p>
         <div className="circle align-1" /> <div className="circle align-2" /> <div className="circle align-3" /> <div className="circle align-4" /> <div className="circle align-5" /> <div className="circle align-6" /> <div className="circle align-7" /> <div className="circle align-8" /> <div className="circle align-9" /> <div className="circle align-10" />
-        <p className="label">pro war</p>
       </div>
       <div className="gallery">
         <SingleCard quote="I think we all felt that sooner or later we were going to be drafted, and my personal feeling, and I think a lot of my classmates shared this, was that we would be better off serving our country as officers than as enlisted men or draftees." date="1960-1964" person="James Laughlin" align="align-5" texture="texture-1" />
