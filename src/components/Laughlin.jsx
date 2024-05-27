@@ -28,7 +28,7 @@ function SingleCard({
 
 export function Laughlin1() {
   return (
-    <SingleCard quote="I’m not sure that I paid much attention to it because, although people seemed to think that we should have known about the Vietnam War when we were matriculated in 1960, in reality I don’t think most Americans knew where the country was until long after we graduated in 1964." date="1960" person="James Laughlin" />
+    <SingleCard quote="I’m not sure that I paid much attention to it because, although people seemed to think that we should have known about the Vietnam War when we were matriculated in 1960, in reality I don’t think most Americans knew where the country was until long after we graduated in 1964." date="1960" person="James Laughlin" color="laughlin" />
   );
 }
 
