@@ -9,16 +9,15 @@ body {
 }
 
 .laughlin{
-    background-color: #74A6F0;
+    background-color: #4c6c9d;
     color: white;
 }
+
 .stanley{
-    background-color: #86A0E1;
+    background-color: #665b92;
+    color: white;
 }
-.align-4{
-    background-color: #979BD2;
-}
-.align-5{
+.sdsd{
     background: #A895C3;
 }
 .align-6{
@@ -40,9 +39,9 @@ body {
 .flip-card {
   background-color: transparent;
   margin-left: auto;
-  margin-right: 5vw;
+  margin-right: 3vw;
   margin-top: 5dvh;
-  width: 70vw;
+  width: 60vw;
   height: 80vh;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
@@ -77,11 +76,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  box-shadow: rgba(199, 199, 224, 0.716) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  box-shadow: rgba(199, 199, 224, 0.183) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .quote{
-  font-size: 40px;
+  font-size: 30px;
 }
 .person{
   font-size: 25px;
