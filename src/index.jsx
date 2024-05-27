@@ -2,13 +2,12 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import './style.scss';
-import './newstyle.scss';
 import {
   BrowserRouter, Routes, Route,
 } from 'react-router-dom';
-import Home from './components/Home';
-import Laughlin from './components/Laughlin';
-import Test from './components/Test';
+import {
+  Laughlin1, Laughlin2, Laughlin3, Stanley1, Stanley2, Stanley3,
+} from './components/Laughlin';
 
 // function Nav() {
 //   return (
@@ -32,9 +31,12 @@ function App(props) {
     <BrowserRouter>
       <div>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/1" element={<Laughlin />} />
-          <Route path="/test" element={<Test />} />
+          <Route path="/" element={<Laughlin1 />} />
+          <Route path="/laughlin2" element={<Laughlin2 />} />
+          <Route path="/laughlin3" element={<Laughlin3 />} />
+          <Route path="/stanley1" element={<Stanley1 />} />
+          <Route path="/stanley2" element={<Stanley2 />} />
+          <Route path="/stanley3" element={<Stanley3 />} />
           <Route path="*" element={<FallBack />} />
         </Routes>
       </div>
