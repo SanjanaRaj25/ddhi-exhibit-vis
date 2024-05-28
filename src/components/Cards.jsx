@@ -80,6 +80,24 @@ export function Beers3() {
   );
 }
 
+export function Chilcote1() {
+  return (
+    <SingleCard quote="What we knew at that point is that it was likely that [President Lyndon B.] Johnson was going to increase the troop levels and that we were going to get more deeply involved. We didn’t know what that meant. At that point, we thought the country was fully behind the Vietnam War. It was being talked about similar to Korea. There was a Cold War mentality in which, you know, they would talk about the domino effect, that if—as you know, China was heavily involved in the Korean War, and it was assumed that China would be involved in any war in Vietnam." person="Lee Chilcote" color="chilcote" date="" />
+  );
+}
+
+export function Chilcote3() {
+  return (
+    <SingleCard quote="It’s been a hard—for us that served, it just was sort of a confusing situation. We went with patriotic feelings, and we feel we did our service. I think most of us were not at all antiwar. I think every one of us hates war. There’s no question about that. No one loves war. No one loves to be in a war. But the idea that you would lump your troops in with the antiwar feelings was something I guess I really don’t understand to this day." person="Lee Chilcote" color="chilcote" />
+  );
+}
+
+export function Chilcote2() {
+  return (
+    <SingleCard quote="When I left, essentially I was out of contact with any news. Maybe not as early as June ’65 but certainly by December of ’65, because I was at Camp Pendleton, and you know, you get Stars and Stripes, which was the military newspaper, which was all how we were doing in Vietnam and the build-up of troops. And my latest learnings at that point of time were that this country was behind the war. So I learned nothing in Vietnam at all." person="Lee Chilcote" color="chilcote" date="" />
+  );
+}
+
 // export function Stanley3() {
 //   return (
 //     <SingleCard quote="" person="Neal Stanley" className="stanley" date="1960" />
