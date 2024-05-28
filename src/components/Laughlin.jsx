@@ -52,13 +52,31 @@ export function Stanley1() {
 
 export function Stanley2() {
   return (
-    <SingleCard quote="Fortunately, I only had to spend a year there. If I were like the Vietnamese and had to spend my entire adult life fighting those kinds of situations, you’d get demoralized. You had the chance of getting very demoralized, especially if you kept losing. And that was the case with the ARVN troops. And you’re fighting a group of people that were committed. They were 100% committed to what they were doing. They weren’t afraid to die. They believed in a cause, and I’m talking about the National Liberation Front or Viet Cong. Viet Cong was a word that we invented. But, they were committed to that, and they were going to do whatever it needed to be, including giving their own lives to the process that was going on. So, yeah, it was pretty clear when I was there." person="Neal Stanley" className="stanley" />
+    <SingleCard quote="Fortunately, I only had to spend a year there. If I were like the Vietnamese and had to spend my entire adult life fighting those kinds of situations, you’d get demoralized. You had the chance of getting very demoralized, especially if you kept losing. And that was the case with the ARVN troops. And you’re fighting a group of people that were committed. They were 100% committed to what they were doing. They weren’t afraid to die. They believed in a cause, and I’m talking about the National Liberation Front or Viet Cong. Viet Cong was a word that we invented. But, they were committed to that, and they were going to do whatever it needed to be, including giving their own lives to the process that was going on. So, yeah, it was pretty clear when I was there." person="Neal Stanley" color="stanley" />
   );
 }
 
 export function Stanley3() {
   return (
-    <SingleCard quote="But I really… you know, when you think about the impact that this whole experience had on my life, one year out of my life, but what a tremendous impact that it had on everything that I’ve done since that particular point in time, good and bad, you need to recognize it. You need to go through it. You need to analyze it. You need to say, okay, what happened to you during that period of time? Why do you feel the way you feel today, and what did you get out of that situation that you were in that made you the kind of person that you are today? How can you help somebody else that’s going through the same kind of thing? How do you use that in recognizing the kinds of things that are going on today in the world, and give some perspective of that? And don’t mask it all and don’t be fooled by what’s being told you. Your own instincts, your own– what you’re experiencing, what you have experienced, gives you good reason to question, judge—not judge, but to question what’s going on inside of, you know, whether we’re in Afghanistan or Iraq or you name the theater that we’re in, and why are those things occurring? And are we doing the same kinds of things again? So you need to raise your awareness of those things. And all of that now is coming out more and more." person="Neal Stanley" className="stanley" date="2015" />
+    <SingleCard quote="But I really… you know, when you think about the impact that this whole experience had on my life, one year out of my life, but what a tremendous impact that it had on everything that I’ve done since that particular point in time, good and bad, you need to recognize it. You need to go through it. You need to analyze it. You need to say, okay, what happened to you during that period of time? Why do you feel the way you feel today, and what did you get out of that situation that you were in that made you the kind of person that you are today? How can you help somebody else that’s going through the same kind of thing? How do you use that in recognizing the kinds of things that are going on today in the world, and give some perspective of that? And don’t mask it all and don’t be fooled by what’s being told you. Your own instincts, your own– what you’re experiencing, what you have experienced, gives you good reason to question, judge—not judge, but to question what’s going on inside of, you know, whether we’re in Afghanistan or Iraq or you name the theater that we’re in, and why are those things occurring? And are we doing the same kinds of things again? So you need to raise your awareness of those things. And all of that now is coming out more and more." person="Neal Stanley" color="stanley" date="2015" />
+  );
+}
+
+export function Beers1() {
+  return (
+    <SingleCard quote="I don’t remember having a sense beyond the advisors, that there was actually going to be a combat unit deployed to Vietnam until the Marines were deployed to protect the Da Nang airfield." person="Rand Beers" color="beers" date="1965" />
+  );
+}
+
+export function Beers2() {
+  return (
+    <SingleCard quote="So, during the entire time I was in Vietnam, based on studying history here at Dartmouth, understanding the Cold War sense, I was very much fully supportive of the Administration’s position about why we were in Vietnam to prevent Communism from taking over the rest of Vietnam in order to try to maintain the broader containment policy of successive administrations to not allow the Russians or the Communist monolith to encroach further on the Free World. As I reflect back, I don’t know whether at that point in time I understood that China and the Soviet Union were not on the same wavelength, and that it was really mostly or all Russian support for the North Vietnamese, and China was more of a hands off kind of participant to the extent that there was any participation on their part, given the history between Vietnam and China, and their natural antipathy, ethnic antipathy, whatever you want to—however you want to describe that. I cannot recall that I understood that at that particular point in time, although that may have finally penetrated when I became a company commander in the last six months that I was in Vietnam" person="Rand Beers" color="beers" date="1968" />
+  );
+}
+
+export function Beers3() {
+  return (
+    <SingleCard quote="So, I come back from Vietnam thinking, you know, We are in this war because the Pentagon was given freedom of action and it doesn’t seem to me that the State Department was a very loud voice at the table to talk about alternatives other than use of force. And why is that? Don’t they have enough people who can argue military strategy credibly with the Pentagon, now or in the future" person="Rand Beers" color="beers" date="1967" />
   );
 }
 

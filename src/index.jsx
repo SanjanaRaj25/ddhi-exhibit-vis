@@ -6,7 +6,7 @@ import {
   BrowserRouter, Routes, Route,
 } from 'react-router-dom';
 import {
-  Laughlin1, Laughlin2, Laughlin3, Stanley1, Stanley2, Stanley3,
+  Laughlin1, Laughlin2, Laughlin3, Stanley1, Stanley2, Stanley3, Beers1, Beers2, Beers3,
 } from './components/Laughlin';
 
 // function Nav() {
@@ -37,6 +37,9 @@ function App(props) {
           <Route path="/stanley1" element={<Stanley1 />} />
           <Route path="/stanley2" element={<Stanley2 />} />
           <Route path="/stanley3" element={<Stanley3 />} />
+          <Route path="/beers1" element={<Beers1 />} />
+          <Route path="/beers2" element={<Beers2 />} />
+          <Route path="/beersy3" element={<Beers3 />} />
           <Route path="*" element={<FallBack />} />
         </Routes>
       </div>
