@@ -16,7 +16,7 @@ function SingleCard({
         <div className={`flip-card-front ${color}`}>
           <blockquote className="quote"> &quot;{quote}&quot; </blockquote>
           <hr />
-          <p className="person">{person}, {date}</p>
+          <p className="person">{person} {date}</p>
         </div>
         <div className={`flip-card-back ${color}`}>
           <p className="date">{date}</p>
