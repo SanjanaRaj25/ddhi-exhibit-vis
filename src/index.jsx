@@ -11,19 +11,6 @@ import {
   Laughlin1, Laughlin2, Laughlin3, Stanley1, Stanley2, Stanley3, Beers1, Beers2, Beers3, Chilcote1, Chilcote2, Chilcote3,
 } from './components/Cards';
 
-// function Nav() {
-//   return (
-//     <nav>
-//       <ul>
-//         <li><NavLink to="/">Home</NavLink></li>
-//         <li><NavLink to="/laughlin">Laughlin</NavLink></li>
-//         <li><NavLink to="/2">2</NavLink></li>
-//         <li><NavLink to="/3">3</NavLink></li>
-//       </ul>
-//     </nav>
-//   );
-// }
-
 const theme = createTheme({
   /** Put your mantine theme override here */
 });
@@ -52,6 +39,8 @@ function App(props) {
           <Route path="/chilcote1" element={<Chilcote1 />} />
           <Route path="/chilcote2" element={<Chilcote2 />} />
           <Route path="/chilcote3" element={<Chilcote3 />} />
+
+          {/* ADD NEW ROUTES BELOW THIS */}
 
           <Route path="*" element={<FallBack />} />
         </Routes>
