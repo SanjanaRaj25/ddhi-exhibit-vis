@@ -85,7 +85,7 @@ export function Laughlin1() {
       quote="I’m not sure that I paid much attention to it because, although people seemed to think that we should have known about the Vietnam War when we were matriculated in 1960, in reality I don’t think most Americans knew where the country was until long after we graduated in 1964."
       date="1960"
       person="James Laughlin"
-      color="laughlin"
+      color="laughlin laughlin1"
       image={laughlin1}
       fontsize="38px"
       link="https://dvp.dartmouth.edu/s/dvp/item/84"
@@ -99,7 +99,7 @@ export function Laughlin2() {
       quote="It didn’t take long for those of us who were sent there to realize that we were pawns who really had little control over what we were supposed to be doing, and the name of the game was to survive and help your buddies survive and get home in one piece."
       date="1960"
       person="James Laughlin"
-      color="laughlin"
+      color="laughlin laughlin2"
       image={laughlin1}
       fontsize="38px"
       link="https://dvp.dartmouth.edu/s/dvp/item/84"
@@ -113,7 +113,7 @@ export function Laughlin3() {
       quote="I think that, from my own personal feelings, I’m proud of the fact that I served and the men that served with me. I regret that we were involved in a conflict that was so unpopular and didn’t really produce any positive results."
       date="1960"
       person="James Laughlin"
-      color="laughlin"
+      color="laughlin3"
       image={laughlin1}
       fontsize="38px"
       link="https://dvp.dartmouth.edu/s/dvp/item/84"

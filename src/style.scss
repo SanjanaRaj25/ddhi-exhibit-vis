@@ -8,11 +8,22 @@ body {
   background-color: #191414;
 }
 
-
-.laughlin{
-  background: rgb(179,209,255);
-  background: linear-gradient(180deg, rgba(179,209,255,1) 0%, rgba(77,110,162,1) 36%);
+.laughlin1{
+  background: rgb(23, 44, 138);
 }
+
+.laughlin2{
+  background: rgb(46, 66, 159);
+}
+
+.laughlin3{
+  background: rgb(67, 89, 187);
+}
+
+// .laughlin{
+//   background: rgb(179,209,255);
+//   background: linear-gradient(180deg, rgba(179,209,255,1) 0%, rgba(77,110,162,1) 36%);
+// }
 
 .stanley{
   background: rgb(171,158,227);
@@ -134,4 +145,26 @@ body {
   background: transparent;
   border: none;
   box-shadow: none;
+  .rhap_time {
+    color: #fff;
+    font-size: 16px;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  .rhap_progress-indicator{
+    background: white;
+  }
+  .rhap_volume-indicator{
+    background: white;
+  }
+  path{
+    color: white;
+    fill: white;
+  }
 }
+
+$rhap_bar-color: #e4e4e4 !default;     // Color of volume and progress bar
+$rhap_time-color: #ffffff !default;       // Font color of current time and duration
+$rhap_font-family: inherit !default;
+$rhap_theme-color: #ffffff !default; 
