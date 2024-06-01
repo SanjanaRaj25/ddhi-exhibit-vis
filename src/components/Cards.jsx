@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/media-has-caption */
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/button-has-type */
 /* eslint-disable react/jsx-closing-tag-location */
@@ -5,7 +6,13 @@
 /* eslint-disable max-len */
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
+import {
+  Card, Image, Text, Badge, Button, Group, Center, Divider,
+} from '@mantine/core';
 import { IconBlockquote } from '@tabler/icons-react';
+import AudioPlayer from 'react-h5-audio-player';
+import 'react-h5-audio-player/lib/styles.css';
+import laughlin1 from '../pictures/laughlin1.jpeg';
 
 function SingleCard({
   quote, date, person, color,
@@ -26,21 +33,92 @@ function SingleCard({
   );
 }
 
+export function QuoteCard({
+  quote, date, person, color, link, audio, image, fontsize,
+}) {
+  return (
+    <Card className={`card ${color}`} shadow="sm" padding="lg" radius="md">
+
+      <Card.Section>
+        <Center>
+          <Image
+            src={image}
+            className="pic"
+            alt="narrator"
+          />
+        </Center>
+      </Card.Section>
+
+      <Group justify="space-between" mt="md" mb="xs">
+        <Text c="white" fw={500}>{person}</Text>
+        <Badge color="#191414">{date}</Badge>
+      </Group>
+
+      <Text size={fontsize} c="white">
+        &quot;{quote}&quot;
+      </Text>
+
+      <Card.Section>
+        <AudioPlayer
+          autoPlay
+          src="//rcweb.dartmouth.edu/DDHI/histories/laughlin_james/laughlin_james.mp3"
+          onPlay={(e) => console.log('onPlay')}
+        />
+        <Center>
+          <Button component="a"
+            href={link}
+            color="#191414"
+            size="xs"
+            mt="md"
+            radius="md"
+          >
+            go to full interview
+          </Button>
+        </Center>
+      </Card.Section>
+    </Card>
+  );
+}
+
 export function Laughlin1() {
   return (
-    <SingleCard quote="I’m not sure that I paid much attention to it because, although people seemed to think that we should have known about the Vietnam War when we were matriculated in 1960, in reality I don’t think most Americans knew where the country was until long after we graduated in 1964." date="1960" person="James Laughlin" color="laughlin" />
+    <QuoteCard
+      quote="I’m not sure that I paid much attention to it because, although people seemed to think that we should have known about the Vietnam War when we were matriculated in 1960, in reality I don’t think most Americans knew where the country was until long after we graduated in 1964."
+      date="1960"
+      person="James Laughlin"
+      color="laughlin"
+      image={laughlin1}
+      fontsize="38px"
+      link="https://dvp.dartmouth.edu/s/dvp/item/84"
+    />
   );
 }
 
 export function Laughlin2() {
   return (
-    <SingleCard quote="It didn’t take long for those of us who were sent there to realize that we were pawns who really had little control over what we were supposed to be doing, and the name of the game was to survive and help your buddies survive and get home in one piece." date="1968" person="James Laughlin" color="laughlin" />
+    <QuoteCard
+      quote="It didn’t take long for those of us who were sent there to realize that we were pawns who really had little control over what we were supposed to be doing, and the name of the game was to survive and help your buddies survive and get home in one piece."
+      date="1960"
+      person="James Laughlin"
+      color="laughlin"
+      image={laughlin1}
+      fontsize="38px"
+      link="https://dvp.dartmouth.edu/s/dvp/item/84"
+    />
   );
 }
 
 export function Laughlin3() {
   return (
-    <SingleCard quote="I think that, from my own personal feelings, I’m proud of the fact that I served and the men that served with me. I regret that we were involved in a conflict that was so unpopular and didn’t really produce any positive results." date="1968" person="James Laughlin" color="laughlin" />
+    <QuoteCard
+      quote="I think that, from my own personal feelings, I’m proud of the fact that I served and the men that served with me. I regret that we were involved in a conflict that was so unpopular and didn’t really produce any positive results."
+      date="1960"
+      person="James Laughlin"
+      color="laughlin"
+      image={laughlin1}
+      fontsize="38px"
+      link="https://dvp.dartmouth.edu/s/dvp/item/84"
+    />
   );
 }
 

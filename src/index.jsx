@@ -1,10 +1,12 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
+import '@mantine/core/styles.css';
 import { createRoot } from 'react-dom/client';
 import './style.scss';
 import {
   BrowserRouter, Routes, Route,
 } from 'react-router-dom';
+import { createTheme, MantineProvider } from '@mantine/core';
 import {
   Laughlin1, Laughlin2, Laughlin3, Stanley1, Stanley2, Stanley3, Beers1, Beers2, Beers3, Chilcote1, Chilcote2, Chilcote3,
 } from './components/Cards';
@@ -22,6 +24,10 @@ import {
 //   );
 // }
 
+const theme = createTheme({
+  /** Put your mantine theme override here */
+});
+
 function FallBack(props) {
   return <div>URL Not Found</div>;
 }
@@ -31,7 +37,7 @@ function App(props) {
     <BrowserRouter>
       <div>
         <Routes>
-          <Route path="/" element={<Laughlin1 />} />
+          <Route path="/*" element={<Laughlin1 />} />
           <Route path="/laughlin2" element={<Laughlin2 />} />
           <Route path="/laughlin3" element={<Laughlin3 />} />
 
@@ -55,4 +61,4 @@ function App(props) {
 }
 
 const root = createRoot(document.getElementById('main'));
-root.render(<App />);
+root.render(<MantineProvider theme={theme}><App /></MantineProvider>);
