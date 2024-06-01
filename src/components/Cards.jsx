@@ -60,7 +60,6 @@ export function QuoteCard({
 
       <Card.Section>
         <AudioPlayer
-          autoPlay
           src="//rcweb.dartmouth.edu/DDHI/histories/laughlin_james/laughlin_james.mp3"
           onPlay={(e) => console.log('onPlay')}
         />
