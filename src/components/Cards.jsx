@@ -47,7 +47,7 @@ export function QuoteCard({
   return (
     <Card className={`card ${color}`} shadow="sm" padding="lg" radius="md">
 
-      <Card.Section>
+      {/* <Card.Section>
         <Center>
           <Image
             src={image}
@@ -55,7 +55,7 @@ export function QuoteCard({
             alt="narrator"
           />
         </Center>
-      </Card.Section>
+      </Card.Section> */}
 
       <Group justify="space-between" mt="md" mb="xs">
         <Text c="white" fw={500}>{person}</Text>
@@ -254,6 +254,19 @@ export function Chilcote3() {
       quote="It’s been a hard—for us that served, it just was sort of a confusing situation. We went with patriotic feelings, and we feel we did our service. I think most of us were not at all antiwar. I think every one of us hates war. There’s no question about that. No one loves war. No one loves to be in a war. But the idea that you would lump your troops in with the antiwar feelings was something I guess I really don’t understand to this day."
       person="Lee Chilcote"
       color="chilcote"
+    />
+  );
+}
+
+export function Miller1() {
+  return (
+    <QuoteCard fontsize="30px"
+      image={placeholder}
+      link="https://dvp.dartmouth.edu/s/dvp/item/50"
+      audio="//rcweb.dartmouth.edu/DDHI/histories/chilcote_lee/chilcote_lee.mp3"
+      quote="It’s been a hard—for us that served, it just was sort of a confusing situation. We went with patriotic feelings, and we feel we did our service. I think most of us were not at all antiwar. I think every one of us hates war. There’s no question about that. No one loves war. No one loves to be in a war. But the idea that you would lump your troops in with the antiwar feelings was something I guess I really don’t understand to this day."
+      person="Ed Miller"
+      color="miller"
     />
   );
 }
