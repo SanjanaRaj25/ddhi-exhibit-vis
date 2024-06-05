@@ -8,7 +8,7 @@ import {
 } from 'react-router-dom';
 import { createTheme, MantineProvider } from '@mantine/core';
 import {
-  Laughlin1, Laughlin2, Laughlin3, Stanley1, Stanley2, Stanley3, Beers1, Beers2, Beers3, Chilcote1, Chilcote2, Chilcote3, Miller1,
+  Laughlin1, Laughlin2, Laughlin3, Stanley1, Stanley2, Stanley3, Beers1, Beers2, Beers3, Chilcote1, Chilcote2, Chilcote3,
 } from './components/Cards';
 
 const theme = createTheme({
@@ -39,8 +39,6 @@ function App(props) {
           <Route path="/chilcote1" element={<Chilcote1 />} />
           <Route path="/chilcote2" element={<Chilcote2 />} />
           <Route path="/chilcote3" element={<Chilcote3 />} />
-
-          <Route path="/miller1" element={<Miller1 />} />
 
           {/* ADD NEW ROUTES BELOW THIS */}
 
