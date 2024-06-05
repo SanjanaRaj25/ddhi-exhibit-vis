@@ -273,7 +273,7 @@ export function Miller1() {
 
 export function Miller2() {
   return (
-    <QuoteCard fontsize="30px"
+    <QuoteCard fontsize="50px"
       image={placeholder}
       link="https://dvp.dartmouth.edu/s/dvp/item/50"
       audio="//rcweb.dartmouth.edu/DDHI/histories/chilcote_lee/chilcote_lee.mp3"
