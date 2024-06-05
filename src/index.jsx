@@ -9,6 +9,7 @@ import {
 import { createTheme, MantineProvider } from '@mantine/core';
 import {
   Laughlin1, Laughlin2, Laughlin3, Stanley1, Stanley2, Stanley3, Beers1, Beers2, Beers3, Chilcote1, Chilcote2, Chilcote3,
+  Laughlin1, Laughlin2, Laughlin3, Stanley1, Stanley2, Stanley3, Beers1, Beers2, Beers3, Chilcote1, Chilcote2, Chilcote3, Miller1, Miller2,
 } from './components/Cards';
 
 const theme = createTheme({

@@ -48,12 +48,14 @@ export function QuoteCard({
     <Card className={`card ${color}`} shadow="sm" padding="lg" radius="md">
 
       <Card.Section>
+      <Card.Section>
         <Center>
           <Image
             className="pic"
             alt="narrator"
           />
         </Center>
+      </Card.Section>
       </Card.Section>
 
       <Group justify="center" mt="md" mb="xs">
@@ -247,6 +249,32 @@ export function Chilcote3() {
       something I guess I really don’t understand to this day."
       person="Lee Chilcote"
       color="chilcote"
+    />
+  );
+}
+
+export function Miller1() {
+  return (
+    <QuoteCard fontsize="30px"
+      image={placeholder}
+      link="https://dvp.dartmouth.edu/s/dvp/item/50"
+      audio="//rcweb.dartmouth.edu/DDHI/histories/chilcote_lee/chilcote_lee.mp3"
+      quote="sdfsdfdsfsdfsdf"
+      person="Ed Miller"
+      color="miller"
+    />
+  );
+}
+
+export function Miller2() {
+  return (
+    <QuoteCard fontsize="50px"
+      image={placeholder}
+      link="https://dvp.dartmouth.edu/s/dvp/item/50"
+      audio="//rcweb.dartmouth.edu/DDHI/histories/chilcote_lee/chilcote_lee.mp3"
+      quote="sdfsdfdsfsdfsdf"
+      person="Ed Miller"
+      color="miller"
     />
   );
 }
