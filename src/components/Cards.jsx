@@ -48,14 +48,12 @@ export function QuoteCard({
     <Card className={`card ${color}`} shadow="sm" padding="lg" radius="md">
 
       <Card.Section>
-      <Card.Section>
         <Center>
           <Image
             className="pic"
             alt="narrator"
           />
         </Center>
-      </Card.Section>
       </Card.Section>
 
       <Group justify="center" mt="md" mb="xs">
