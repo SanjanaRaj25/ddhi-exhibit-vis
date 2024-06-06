@@ -135,6 +135,7 @@ export function Stanley1() {
       color="stanley"
       fontsize="40px"
       link="https://dvp.dartmouth.edu/s/dvp/item/84"
+      aduio="https://rcweb.dartmouth.edu/DDHI/histories/stanley_neal/stanley_neal_clip1.mp3"
     />
   );
 }
@@ -146,7 +147,7 @@ export function Stanley2() {
       color="stanley"
       fontsize="40px"
       link="https://dvp.dartmouth.edu/s/dvp/item/216"
-      audio="https://rcweb.dartmouth.edu/DDHI/histories/stanley_neal/stanley_neal.mp3"
+      audio="https://rcweb.dartmouth.edu/DDHI/histories/stanley_neal/stanley_neal_clip2.mp3"
     />
   );
 }
@@ -156,7 +157,7 @@ export function Stanley3() {
     <QuoteCard
       fontsize="30px"
       link="https://dvp.dartmouth.edu/s/dvp/item/216"
-      audio="https://rcweb.dartmouth.edu/DDHI/histories/stanley_neal/stanley_neal.mp3"
+      audio="https://rcweb.dartmouth.edu/DDHI/histories/stanley_neal/stanley_neal_clip3.mp3"
       quote="what a tremendous impact that it had on everything that I’ve done since that particular point in time...Your own instincts, your own– what you’re experiencing, what you have experienced, gives
       you good reason to question, judge—not judge, but to question what’s going on inside of, you know, whether we’re in
        Afghanistan or Iraq or you name the theater that we’re in, and why are those things occurring? And are we doing the
