@@ -107,7 +107,7 @@ export function Laughlin2() {
       color="laughlin laughlin2"
       fontsize="44px"
       link="https://dvp.dartmouth.edu/s/dvp/item/84"
-      audio="https://rcweb.dartmouth.edu/DDHI/histories/laughlin_james/laughlin_james.mp3"
+      audio="https://rcweb.dartmouth.edu/DDHI/histories/laughlin_james/laughlin_james_clip2.mp3"
     />
   );
 }
@@ -122,7 +122,7 @@ export function Laughlin3() {
       image={laughlin3}
       fontsize="40px"
       link="https://dvp.dartmouth.edu/s/dvp/item/84"
-      audio="https://rcweb.dartmouth.edu/DDHI/histories/laughlin_james/laughlin_james.mp3"
+      audio="https://rcweb.dartmouth.edu/DDHI/histories/laughlin_james/laughlin_james_clip3.mp3"
     />
   );
 }
