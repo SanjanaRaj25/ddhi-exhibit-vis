@@ -97,7 +97,7 @@ export function Laughlin1() {
       image={laughlin1}
       fontsize="38px"
       link="https://dvp.dartmouth.edu/s/dvp/item/84"
-      audio="https://rcweb.dartmouth.edu/DDHI/histories/laughlin_james/laughlin_james.mp3"
+      audio="https://rcweb.dartmouth.edu/DDHI/histories/laughlin_james/laughlin_james_clip.mp3"
     />
   );
 }
