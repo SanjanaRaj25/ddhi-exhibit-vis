@@ -173,7 +173,7 @@ export function Beers1() {
     <QuoteCard
       fontsize="35px"
       link="https://dvp.dartmouth.edu/s/dvp/item/38"
-      audio="//rcweb.dartmouth.edu/DDHI/histories/beers_rand/beers_rand.mp3"
+      audio="//rcweb.dartmouth.edu/DDHI/histories/beers_rand/beers_rand_clip1.mp3"
       quote="I don’t remember having a sense beyond the advisors, that there was actually going to be a combat unit deployed to Vietnam until the Marines were deployed to protect the Da Nang airfield."
       person="Rand Beers"
       color="beers"
@@ -186,7 +186,7 @@ export function Beers2() {
   return (
     <QuoteCard fontsize="28px"
       link="https://dvp.dartmouth.edu/s/dvp/item/38"
-      audio="//rcweb.dartmouth.edu/DDHI/histories/beers_rand/beers_rand.mp3"
+      audio="//rcweb.dartmouth.edu/DDHI/histories/beers_rand/beers_rand_clip2.mp3"
       quote="So, during the entire time I was in Vietnam, based on studying history here at Dartmouth,
       understanding the Cold War sense, I was very much fully supportive of the Administration’s position
       about why we were in Vietnam to prevent Communism from taking over the rest of Vietnam in order to
@@ -201,7 +201,7 @@ export function Beers3() {
   return (
     <QuoteCard fontsize="28px"
       link="https://dvp.dartmouth.edu/s/dvp/item/38"
-      audio="//rcweb.dartmouth.edu/DDHI/histories/beers_rand/beers_rand.mp3"
+      audio="//rcweb.dartmouth.edu/DDHI/histories/beers_rand/beers_rand_clip3.mp3"
       quote="So, I come back from Vietnam thinking, you know, We are in this war because the Pentagon was given freedom of action and it doesn’t seem to me that the State Department was a very loud voice at the table to talk about alternatives other than use of force. And why is that? Don’t they have enough people who can argue military strategy credibly with the Pentagon, now or in the future"
       person="Rand Beers"
       color="beers"
