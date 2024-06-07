@@ -135,7 +135,7 @@ export function Stanley1() {
       color="stanley"
       fontsize="40px"
       link="https://dvp.dartmouth.edu/s/dvp/item/84"
-      aduio="https://rcweb.dartmouth.edu/DDHI/histories/stanley_neal/stanley_neal_clip1.mp3"
+      audio="https://rcweb.dartmouth.edu/DDHI/histories/stanley_neal/stanley_neal_clip1.mp3"
     />
   );
 }
