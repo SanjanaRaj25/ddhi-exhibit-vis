@@ -22,25 +22,6 @@ import beers3 from '../pictures/beers3.jpeg';
 import chilcote1 from '../pictures/chilcote1.png';
 import chilcote2 from '../pictures/chilcote2.png';
 
-function SingleCard({
-  quote, date, person, color,
-}) {
-  return (
-    <div className="flip-card">
-      <div className="flip-card-inner">
-        <div className={`flip-card-front ${color}`}>
-          <blockquote className="quote"> &quot;{quote}&quot; </blockquote>
-          <hr />
-          <p className="person">{person} {date}</p>
-        </div>
-        <div className={`flip-card-back ${color}`}>
-          <p className="date">{date}</p>
-        </div>
-      </div>
-    </div>
-  );
-}
-
 export function QuoteCard({
   quote, date, person, color, link, audio, image, fontsize,
 }) {
