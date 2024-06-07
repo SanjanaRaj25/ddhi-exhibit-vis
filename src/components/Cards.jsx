@@ -69,17 +69,6 @@ export function QuoteCard({
           src={audio}
           onPlay={(e) => console.log('onPlay')}
         />
-        <Center>
-          <Button component="a"
-            href={link}
-            color="#191414"
-            size="xs"
-            mt="md"
-            radius="md"
-          >
-            go to full interview
-          </Button>
-        </Center>
       </Card.Section>
     </Card>
   );
