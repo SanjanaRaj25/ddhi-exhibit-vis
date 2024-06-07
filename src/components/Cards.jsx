@@ -214,7 +214,7 @@ export function Chilcote1() {
     <QuoteCard
       fontsize="30px"
       link="https://dvp.dartmouth.edu/s/dvp/item/50"
-      audio="//rcweb.dartmouth.edu/DDHI/histories/chilcote_lee/chilcote_lee.mp3"
+      audio="//rcweb.dartmouth.edu/DDHI/histories/chilcote_lee/chilcote_lee_clip1.mp3"
       quote="What we knew at that point is that it was likely that [President Lyndon B.] Johnson was going to increase the troop
       levels and that we were going to get more deeply involved. We didn’t know what that meant. At that point, we thought the
       country was fully behind the Vietnam War."
@@ -228,7 +228,7 @@ export function Chilcote2() {
   return (
     <QuoteCard fontsize="30px"
       link="https://dvp.dartmouth.edu/s/dvp/item/50"
-      audio="//rcweb.dartmouth.edu/DDHI/histories/chilcote_lee/chilcote_lee.mp3"
+      audio="//rcweb.dartmouth.edu/DDHI/histories/chilcote_lee/chilcote_lee_clip2.mp3"
       quote="When I left, essentially I was out of contact with any news. Maybe not as early as June ’65 but certainly by December of ’65... my latest learnings at that point of time were that this country was behind the war.
       So I learned nothing in Vietnam at all."
       person="Lee Chilcote"
@@ -241,7 +241,7 @@ export function Chilcote3() {
   return (
     <QuoteCard fontsize="30px"
       link="https://dvp.dartmouth.edu/s/dvp/item/50"
-      audio="//rcweb.dartmouth.edu/DDHI/histories/chilcote_lee/chilcote_lee.mp3"
+      audio="//rcweb.dartmouth.edu/DDHI/histories/chilcote_lee/chilcote_lee_clip3.mp3"
       quote="It’s been a hard—for us that served, it just was sort of a confusing situation. We went with patriotic feelings, and we
       feel we did our service. I think most of us were not at all antiwar. I think every one of us hates war. There’s no question about
       that. No one loves war. No one loves to be in a war. But the idea that you would lump your troops in with the antiwar feelings was
